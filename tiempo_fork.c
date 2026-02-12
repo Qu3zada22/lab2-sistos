@@ -14,7 +14,7 @@ int main() {
         pid_t pid = fork();
 
         if(pid == 0) {
-            for(int j = 0; j < 1000000; j++) {}
+            for(long j = 0; j < 500000000; j++) {}
             return 0;
         }
     }
