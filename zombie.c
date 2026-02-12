@@ -6,11 +6,11 @@ int main() {
     pid_t pid = fork();
 
     if (pid == 0) {
-        printf("Proceso hijo terminado\n");
+        printf("Hijo terminado\n");
         return 0;
     } else {
-        printf("Proceso padre durmiendo...\n");
-        sleep(30);
+        printf("Padre durmiendo 60 segundos...\n");
+        sleep(60);
     }
 
     return 0;
